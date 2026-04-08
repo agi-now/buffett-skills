@@ -26,21 +26,20 @@ No need to mention "Buffett" — any investment analysis or business quality que
 
 ## Installation
 
-Clone this repository into your project's `.claude/skills/` directory:
+Clone this repo and copy the `skills/buffett` folder into your project:
 
 ```bash
-cd your-project
-mkdir -p .claude/skills
-git clone https://github.com/agi-now/buffett-skills .claude/skills/buffett-skills
+git clone https://github.com/agi-now/buffett-skills /tmp/buffett-skills
+cp -r /tmp/buffett-skills/skills/buffett your-project/.claude/skills/buffett
 ```
 
-Or copy individual skill directories manually:
+The skill must be placed at `.claude/skills/buffett/SKILL.md` relative to your project root:
 
 ```
 your-project/
 └── .claude/
     └── skills/
-        └── buffett/          ← copy this folder
+        └── buffett/          ← this folder
             ├── SKILL.md
             └── references/
                 ├── 01-thinking-frameworks.md

@@ -26,21 +26,20 @@
 
 ## 安装
 
-将本仓库克隆到你项目的 `.claude/skills/` 目录：
+克隆本仓库，然后将 `skills/buffett` 目录复制到你的项目中：
 
 ```bash
-cd your-project
-mkdir -p .claude/skills
-git clone https://github.com/agi-now/buffett-skills .claude/skills/buffett-skills
+git clone https://github.com/agi-now/buffett-skills /tmp/buffett-skills
+cp -r /tmp/buffett-skills/skills/buffett your-project/.claude/skills/buffett
 ```
 
-或者手动复制单个 skill 目录：
+skill 必须放在项目根目录的 `.claude/skills/buffett/SKILL.md` 路径下：
 
 ```
 your-project/
 └── .claude/
     └── skills/
-        └── buffett/          ← 复制这个文件夹
+        └── buffett/          ← 这个文件夹
             ├── SKILL.md
             └── references/
                 ├── 01-thinking-frameworks.md
